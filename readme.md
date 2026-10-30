@@ -119,7 +119,7 @@ $$ \mathbf X_{pred \ ({k \times 1})} = \mathbf U \times \mathbf w^x =  \begin{bm
 \end{bmatrix}
 $$
 
-In a similar fashion, we define  $ \mathbf Y_{pred \ ({k \times 1})}$ and $ \mathbf Z_{pred \ ({k \times 1})}$
+In a similar fashion, we define  $\mathbf Y_{pred \ ({k \times 1})}$ and $\mathbf Z_{pred \ ({k \times 1})}$
 
 
 ### (5) Linear System of Linear Equations
@@ -138,7 +138,8 @@ $$ \frac{d^2\vec r(t)}{dt^2} = \frac{d^2\vec \eta(t)}{dt^2} $$
 
 Also From Neural Network, we have $\vec \eta(t)=[x_{pred}, y_{pred}, z_{pred}]^T$
 
-Let $\theta : x,y, z $ then
+Let $\theta : x,y, z$ then
+
 $$ \theta_{pred}(t) = \vec u \cdot \vec W_\theta $$
 
 Differentiating these values wrt $t$, we get
