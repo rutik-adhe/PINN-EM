@@ -3,9 +3,11 @@
 ### (1) Differential Equation
 
 Lorentz Force
+
 $$ \vec{F} = q \vec E + \vec v \times \vec B  $$
 
 Newton Law of Motion
+
 $$ \vec F = m \vec a $$
 
 Equating we have
@@ -17,15 +19,16 @@ $$ m \frac{d^2}{dt^2} \vec r(t) = q \vec E + \frac{d}{dt} \vec r(t) \times \vec 
 Applying Initial Conditions as per Physics Informed Extreme Learning Method known as Ansatz Constraint
 
 Let
+
 $$ \vec r(t) = \vec r_0 \ + \vec {v_0}t \ + \vec \eta(t) $$
 
-where $\vec \eta(t) $ is the output of Neural Network
+where $\vec \eta(t)$ is the output of Neural Network
 
 ### (3) Neural Network 
 
 We Let there are N inputs and equal number of Neurons in Hidden Layer as well. This gurrantes minimum error in Least Squares Fitting.
 
-Let $\vec t = [t_1, t_2, ... , t_k] $ denote input vector of Neural Network containing various time points
+Let $\vec t = [t_1, t_2, ... , t_k]$ denote input vector of Neural Network containing various time points
 
 Considering Calculations for single time point $t_k = t$
 
@@ -122,9 +125,10 @@ In a similar fashion, we define  $ \mathbf Y_{pred \ ({k \times 1})}$ and $ \mat
 ### (5) Linear System of Linear Equations
 
 Our Constraint
-$$ m \frac{d^2}{dt^2} \vec r(t) = q \vec E + \frac{d\vec r(t)}{dt}  \times \vec B $$
 
-Since $ \vec r(t) = \vec r_0 \ + \vec {v_0}t \ + \vec \eta(t) $, differentiating we get
+$$m \frac{d^2}{dt^2} \vec r(t) = q \vec E + \frac{d\vec r(t)}{dt}  \times \vec B$$
+
+Since $\vec r(t) = \vec r_0 \ + \vec {v_0}t \ + \vec \eta(t)$, differentiating we get
 
 $$ \vec r(t) = \vec r_0 \ + \vec {v_0}t \ + \vec \eta(t) $$
 
